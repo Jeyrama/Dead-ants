@@ -30,3 +30,5 @@ deadAntCount = function(ants) {
   }
   return Math.max(count('a'), count('n'), count('t'));
 }
+
+// or
