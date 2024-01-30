@@ -13,3 +13,6 @@ The resulting carnage looks like this:
 
 Can you find how many ants have died?
 */
+
+
+// Solution
