@@ -32,3 +32,19 @@ deadAntCount = function(ants) {
 }
 
 // or
+
+deadAntCount = function(ants) {
+  if (ants==null)
+    return 0; 
+  let an=ants.replace(/ant/gi,'');
+  let a=0, n=0, t=0;
+  for (let i=0; i<an.length; ++i)
+  {
+    if (an[i]=='a') a++;
+    if (an[i]=='n') n++;
+    if (an[i]=='t') t++;
+  }
+  let arr=[a,n,t];
+  arr.sort((c,d)=>c-d)
+  return arr[2];
+}
